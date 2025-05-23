@@ -4,17 +4,17 @@ import WorkExperienceItem from "./WorkExperienceItem";
 const workExperience: WorkExperience[] = [
   {
     jobTitle: "Software Engineering Consultant",
-    lengthOfJob: "March 2025 - April 2025",
+    lengthOfJob: "Mar 2025 - Apr 2025",
     company: "Eliza Studios",
   },
   {
     jobTitle: "Software Engineer",
-    lengthOfJob: "September 2021 - October 2024",
+    lengthOfJob: "Sep 2021 - Oct 2024",
     company: "Yoz Labs",
   },
   {
     jobTitle: "Software Developer",
-    lengthOfJob: "August 2019 - September 2021",
+    lengthOfJob: "Aug 2019 - Sep 2021",
     company: "Northwestern University",
   },
 ];
