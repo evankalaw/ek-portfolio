@@ -10,7 +10,7 @@ export default function TechnologyRow(props: TechnologyRowProps) {
   const { technologies, company } = props;
 
   return (
-    <div className="flex flex-row flex-wrap space-x-3">
+    <div className="flex flex-row flex-wrap gap-3">
       {technologies.map((technology) => {
         return (
           <TechnologyBubble

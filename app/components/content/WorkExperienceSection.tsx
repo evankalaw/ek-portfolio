@@ -18,7 +18,7 @@ const workExperience: WorkExperience[] = [
     jobTitle: "Software Developer",
     lengthOfJob: "Aug 2019 - Sep 2021",
     company: "Northwestern University",
-    technologies: ["Laravel", "JavaScript", "Git", "Jenkins"],
+    technologies: ["Laravel", "JavaScript", "Git", "Jenkins", "PHP"],
   },
 ];
 

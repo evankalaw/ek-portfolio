@@ -30,4 +30,6 @@ export type Technology =
   | "Git"
   | "Laravel"
   | "Jenkins"
-  | "Blockchain";
+  | "Blockchain"
+  | "PHP"
+  | "Vercel";
