@@ -1,3 +1,5 @@
+import WorkExperienceSection from "./WorkExperienceSection";
+
 export default function MainContent() {
   return (
     <div className="flex-col h-full text-3xl space-y-6">
@@ -9,6 +11,12 @@ export default function MainContent() {
         with a passion for building scalable and performant web applications
         with great user experiences.
       </div>
+      <div>
+        Most recently, I consulted with Eliza Studios, a creative studio, where
+        I built a comprehensive front end experience for their users with
+        Next.JS, Tailwind CSS, TypeScript, and Sanity CMS.
+      </div>
+      <WorkExperienceSection />
     </div>
   );
 }
