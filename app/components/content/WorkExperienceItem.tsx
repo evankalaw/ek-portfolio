@@ -9,10 +9,12 @@ export default function WorkExperienceItem(props: WorkExperienceItem) {
   const { lengthOfJob, jobTitle, company } = job;
 
   return (
-    <div>
-      <div>{lengthOfJob}</div>
-      <div>{jobTitle}</div>
-      <div>{company}</div>
+    <div className="flex flex-row space-x-6 items-start">
+      <div className="uppercase text-sm leading-[1.5rem]">{lengthOfJob}</div>
+      <div className="flex flex-col leading-[1.5rem]">
+        <div>{jobTitle}</div>
+        <div>{company}</div>
+      </div>
     </div>
   );
 }
