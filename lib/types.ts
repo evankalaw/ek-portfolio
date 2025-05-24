@@ -3,6 +3,7 @@ export type WorkExperience = {
   lengthOfJob: string;
   company: string;
   technologies?: Technology[];
+  description: string;
 };
 
 export type Technology =
