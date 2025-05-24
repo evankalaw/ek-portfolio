@@ -1,5 +1,6 @@
 import Link from "next/link";
 import WorkExperienceSection from "./WorkExperienceSection";
+import ProjectSection from "./ProjectSection";
 
 export default function MainContent() {
   return (
@@ -8,7 +9,7 @@ export default function MainContent() {
         <div>
           I&apos;m a{" "}
           <span className="font-bold">Full Stack Software Engineer</span> with a
-          passion for building scalable and performant web applications with
+          passion for building web applications that are performant and have
           great user experiences.
         </div>
         <div>
@@ -24,6 +25,23 @@ export default function MainContent() {
           experience for their users with Next.JS, Tailwind CSS, TypeScript, and
           Sanity CMS.
         </div>
+        <div>
+          Prior to that, I was a Software Engineer at Yoz Labs, where I worked
+          on a blockchain notifications product.
+        </div>
+        <div>
+          If I&apos;m not building software, I&apos;m probably playing video
+          games, discovering new music, kicking it with good company, or working
+          on my passion project,{" "}
+          <Link
+            href="https://www.instagram.com/mabuyami/"
+            target="_blank"
+            className="text-[#5582ff] font-bold underline"
+          >
+            Mabu-yami
+          </Link>
+          .
+        </div>
       </div>
       <div>
         <div className="text-xl font-bold">Education</div>
@@ -35,6 +53,10 @@ export default function MainContent() {
       <div>
         <div className="text-xl font-bold">Work</div>
         <WorkExperienceSection />
+      </div>
+      <div>
+        <div className="text-xl font-bold">Projects</div>
+        <ProjectSection />
       </div>
     </div>
   );
