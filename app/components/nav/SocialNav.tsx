@@ -16,7 +16,8 @@ const socialLinks: SocialLink[] = [
     icon: (
       <FontAwesomeIcon
         icon={faLinkedin}
-        className="h-10 w-10 hover:text-[#5582ff] transition-all duration-300"
+        size="3x"
+        className="hover:text-[#5582ff] transition-colors duration-300"
       />
     ),
   },
@@ -26,7 +27,8 @@ const socialLinks: SocialLink[] = [
     icon: (
       <FontAwesomeIcon
         icon={faGithub}
-        className="h-10 w-10 hover:text-[#5582ff] transition-all duration-300"
+        size="3x"
+        className="hover:text-[#5582ff] transition-colors duration-300"
       />
     ),
   },
@@ -36,7 +38,8 @@ const socialLinks: SocialLink[] = [
     icon: (
       <FontAwesomeIcon
         icon={faEnvelope}
-        className="h-10 w-10 hover:text-[#5582ff] transition-all duration-300"
+        size="3x"
+        className="hover:text-[#5582ff] transition-colors duration-300"
       />
     ),
   },
@@ -51,8 +54,9 @@ export default function SocialNav() {
           key={link.href}
           target="_blank"
           rel="noopener noreferrer"
+          className="inline-block"
         >
-          <span>{link.icon}</span>
+          {link.icon}
         </Link>
       ))}
     </div>
