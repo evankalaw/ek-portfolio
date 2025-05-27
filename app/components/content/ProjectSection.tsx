@@ -33,7 +33,7 @@ const projects = [
 
 export default function ProjectSection() {
   return (
-    <div>
+    <div className="py-3 space-y-3">
       {projects.map((project) => (
         <Project
           key={project.title}
