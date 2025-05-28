@@ -23,11 +23,9 @@ const projects = [
   },
   {
     title: "Smart Meal Planner",
-    description: "Description",
-  },
-  {
-    title: "Song BPM Tool",
-    description: "Description",
+    description:
+      "I cook a lot, and I wanted to be able to get some recipe ideas based upon the ingredients I have at home. Coincidentally, I wanted to experiment with the OpenAI API, so I built a meal planner that would take in a list of ingredients and return a list of recipes that could be made with the ingredients using GPT-4o.",
+    link: "https://github.com/evankalaw/macroio",
   },
 ];
 
@@ -39,6 +37,7 @@ export default function ProjectSection() {
           key={project.title}
           title={project.title}
           description={project.description}
+          link={project.link}
         />
       ))}
     </div>
