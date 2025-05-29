@@ -44,8 +44,12 @@ export default function Project(props: ProjectProps) {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-3 py-3 text-gray-700 text-sm md:text-base leading-relaxed">
-          {description}
+        <div className="px-3 py-3 text-gray-700 text-sm md:text-base leading-relaxed whitespace-normal">
+          {description.split("\n\n").map((paragraph, index) => (
+            <p key={index} className={index > 0 ? "mt-4" : ""}>
+              {paragraph}
+            </p>
+          ))}
         </div>
         {link && (
           <div className="px-3 pb-3 flex justify-end">
