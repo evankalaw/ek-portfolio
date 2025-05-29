@@ -1,6 +1,7 @@
 import Project from "./Project";
+import { ProjectType } from "@/lib/types";
 
-const projects = [
+const projects: ProjectType[] = [
   {
     title: "Token Launchpad on Base",
     description: "Description",
@@ -17,6 +18,7 @@ const projects = [
     title: "Twitter Profile Picture Tool",
     description:
       "In 2021, non-fungible tokens (NFTs) gained significant attention in the blockchain space and in the public at large. To leverage this trend, Twitter introduced a feature in their paid tier that allowed users to set an Ethereum NFT that they owned as their profile picture. Ownership details were visible to others on the platform, and NFT profile pictures were denoted with a special border.\n\nI developed the front end for a free alternative to this feature which supported uploading NFTs across multiple blockchains, not just Ethereum. After a user connected their wallet to the website, we displayed all their available NFTs in the UI and allowed them to select one as their profile picture.\n\nBy linking a user's Twitter account and gaining the proper oauth permissions, along with having them generate a cryptographic signature, we verified that a user owned the NFT they wanted to change their profile picture to and changed it for them on Twitter. I also built a page that helped display the token details.",
+    technologies: ["React", "Tailwind", "Blockchain"],
   },
   {
     title: "Twitch Token Drop Tool",
@@ -34,12 +36,7 @@ export default function ProjectSection() {
   return (
     <div className="py-3 space-y-3">
       {projects.map((project) => (
-        <Project
-          key={project.title}
-          title={project.title}
-          description={project.description}
-          link={project.link}
-        />
+        <Project key={project.title} project={project} />
       ))}
     </div>
   );

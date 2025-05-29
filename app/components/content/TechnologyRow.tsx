@@ -3,21 +3,15 @@ import TechnologyBubble from "./TechnologyBubble";
 
 interface TechnologyRowProps {
   technologies: Technology[];
-  company: string;
 }
 
 export default function TechnologyRow(props: TechnologyRowProps) {
-  const { technologies, company } = props;
+  const { technologies } = props;
 
   return (
     <div className="flex flex-row flex-wrap gap-3">
       {technologies.map((technology) => {
-        return (
-          <TechnologyBubble
-            key={company + "tech" + technology}
-            technology={technology}
-          />
-        );
+        return <TechnologyBubble key={technology} technology={technology} />;
       })}
     </div>
   );

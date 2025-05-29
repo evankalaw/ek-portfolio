@@ -20,7 +20,7 @@ export default function WorkExperienceItem(props: WorkExperienceItem) {
         <div className="text-sm my-1">{description}</div>
         {technologies && (
           <div className="mt-2">
-            <TechnologyRow technologies={technologies} company={company} />
+            <TechnologyRow technologies={technologies} />
           </div>
         )}
       </div>
