@@ -6,6 +6,13 @@ export type WorkExperience = {
   description: string;
 };
 
+export type ProjectType = {
+  title: string;
+  description: string;
+  link?: string;
+  technologies?: Technology[];
+};
+
 export type Technology =
   | "TypeScript"
   | "Next.JS"

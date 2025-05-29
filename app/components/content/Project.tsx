@@ -9,15 +9,17 @@ import {
   faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import TechnologyRow from "./TechnologyRow";
+import { ProjectType } from "@/lib/types";
 
 interface ProjectProps {
-  title: string;
-  description: string;
-  link?: string;
+  project: ProjectType;
 }
 
 export default function Project(props: ProjectProps) {
-  const { title, description, link } = props;
+  const { project } = props;
+  const { title, description, link, technologies } = project;
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -41,7 +43,7 @@ export default function Project(props: ProjectProps) {
       </div>
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-none opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="px-3 py-3 text-gray-700 text-sm md:text-base leading-relaxed whitespace-normal">
@@ -65,6 +67,12 @@ export default function Project(props: ProjectProps) {
                 <span className="text-sm font-medium">View</span>
               </div>
             </Link>
+          </div>
+        )}
+
+        {technologies && (
+          <div className="px-3 pb-3">
+            <TechnologyRow technologies={technologies} />
           </div>
         )}
       </div>
