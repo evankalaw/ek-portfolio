@@ -53,28 +53,32 @@ export default function Project(props: ProjectProps) {
             </p>
           ))}
         </div>
-        {link && (
-          <div className="px-3 pb-3 flex justify-end">
-            <Link
-              href={link}
-              className="inline-block text-blue-500 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View Project"
-            >
-              <div className="flex flex-row items-center gap-2 border border-gray-300 rounded-md px-3 py-2 w-fit hover:bg-gray-50 transition-colors duration-200">
-                <FontAwesomeIcon icon={faExternalLinkAlt} className="w-3 h-3" />
-                <span className="text-sm font-medium">View</span>
-              </div>
-            </Link>
-          </div>
-        )}
-
-        {technologies && (
-          <div className="px-3 pb-3">
-            <TechnologyRow technologies={technologies} />
-          </div>
-        )}
+        <div className="flex flex-row justify-between items-center">
+          {technologies && (
+            <div className="px-3 pb-3">
+              <TechnologyRow technologies={technologies} />
+            </div>
+          )}
+          {link && (
+            <div className="px-3 pb-3 flex justify-end">
+              <Link
+                href={link}
+                className="inline-block text-blue-500 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Project"
+              >
+                <div className="flex flex-row items-center gap-2 border border-gray-300 rounded-md px-3 py-2 w-fit hover:bg-gray-50 transition-colors duration-200">
+                  <FontAwesomeIcon
+                    icon={faExternalLinkAlt}
+                    className="w-3 h-3"
+                  />
+                  <span className="text-sm font-medium">View</span>
+                </div>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
