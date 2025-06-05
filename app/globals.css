@@ -1,31 +1,36 @@
+/* globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-primary: #C2705E;
+  /* soft clay red */
+  --color-brand-secondary: #F2C6AC;
+  /* creamy blush */
+  --color-brand-dark: #3A2C27;
+  /* espresso brown */
+  --color-brand-text: #1C1C1C;
+  /* main black */
+  --color-brand-background: #FFF8F5;
+  /* warm off-white */
+  --color-brand-tag: #FFE5D3;
+  /* light peach */
+  --color-brand-accent: #8C5E58;
+  /* muted mauve */
+  --color-brand-success: #7A9E7E;
+  /* sage green */
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 2. Apply your theme globally */
 html,
 body {
   height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-brand-background);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
 }

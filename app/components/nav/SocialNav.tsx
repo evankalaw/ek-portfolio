@@ -17,7 +17,7 @@ const socialLinks: SocialLink[] = [
       <FontAwesomeIcon
         icon={faLinkedin}
         size="3x"
-        className="hover:text-[#5582ff] transition-colors duration-300"
+        className="text-brand-primary hover:text-brand-accent transition-colors duration-300"
       />
     ),
   },
@@ -28,7 +28,7 @@ const socialLinks: SocialLink[] = [
       <FontAwesomeIcon
         icon={faGithub}
         size="3x"
-        className="hover:text-[#5582ff] transition-colors duration-300"
+        className="text-brand-primary hover:text-brand-accent transition-colors duration-300"
       />
     ),
   },
@@ -39,7 +39,7 @@ const socialLinks: SocialLink[] = [
       <FontAwesomeIcon
         icon={faEnvelope}
         size="3x"
-        className="hover:text-[#5582ff] transition-colors duration-300"
+        className="text-brand-primary hover:text-brand-accent transition-colors duration-300"
       />
     ),
   },

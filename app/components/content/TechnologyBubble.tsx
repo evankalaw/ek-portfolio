@@ -8,7 +8,7 @@ export default function TechnologyBubble(props: TechnologyBubbleProps) {
   const { technology } = props;
 
   return (
-    <div className="border border-gray-300 rounded-full px-3 py-1 text-xs bg-[#24ad7480]">
+    <div className="border border-brand-secondary rounded-full px-3 py-1 text-xs text-brand-primary bg-brand-tag">
       {technology}
     </div>
   );
