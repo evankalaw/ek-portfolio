@@ -17,7 +17,7 @@ export default function MainContent() {
           <Link
             href="https://elizastudios.ai"
             target="_blank"
-            className="text-[#5582ff] font-bold underline"
+            className="hover:text-brand-accent text-brand-primary font-bold underline"
           >
             Eliza Studios
           </Link>
@@ -36,7 +36,7 @@ export default function MainContent() {
           <Link
             href="https://www.instagram.com/mabuyami/"
             target="_blank"
-            className="text-[#5582ff] font-bold underline"
+            className="hover:text-brand-accent text-brand-primary font-bold underline"
           >
             Mabu-yami
           </Link>
