@@ -22,13 +22,16 @@ const projects: ProjectType[] = [
   },
   {
     title: "Twitch Token Drop Tool",
-    description: "Description",
+    description:
+      "Twitch is a platform where users can livestream to audiences in real time. It's common for Twitch streamers to offer rewards or incentives to engage their viewers.\n\nAs NFTs gained mainstream attention in 2021, I developed frontend features for a tool that enabled Twitch streamers to reward viewer engagement with non-fungible tokens (NFTs). During a livestream, an overlay would prompt viewers to claim their reward which would trigger the creatino of an NFT when clicked. The NFT was then stored in a pre-created wallet associated with the viewer's Twitch account. On this particular project, I added the clickable element to the overlay along with the form for the NFT Metadata and image that was used to create NFTs on the Streamer's side.",
+    technologies: ["React", "Tailwind", "Blockchain"],
   },
   {
     title: "Smart Meal Planner",
     description:
       "I cook a lot, and I wanted to be able to get some recipe ideas based upon the ingredients I have at home. Coincidentally, I wanted to experiment with the OpenAI API, so I built a meal planner that would take in a list of ingredients and return a list of recipes that could be made with the ingredients using GPT-4o.",
     link: "https://github.com/evankalaw/macroio",
+    technologies: ["Next.JS", "Tailwind", "OpenAI", "Vercel"],
   },
 ];
 

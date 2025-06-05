@@ -40,4 +40,5 @@ export type Technology =
   | "Jenkins"
   | "Blockchain"
   | "PHP"
-  | "Vercel";
+  | "Vercel"
+  | "OpenAI";
