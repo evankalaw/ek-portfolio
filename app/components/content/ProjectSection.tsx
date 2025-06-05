@@ -31,7 +31,7 @@ const projects: ProjectType[] = [
     description:
       "I cook a lot, and I wanted to be able to get some recipe ideas based upon the ingredients I have at home. Coincidentally, I wanted to experiment with the OpenAI API, so I built a meal planner that would take in a list of ingredients and return a list of recipes that could be made with the ingredients using GPT-4o.",
     link: "https://github.com/evankalaw/macroio",
-    technologies: ["Next.JS", "Tailwind", "OpenAI"],
+    technologies: ["Next.JS", "Tailwind", "OpenAI", "Vercel"],
   },
 ];
 
