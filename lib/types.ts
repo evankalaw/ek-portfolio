@@ -41,4 +41,5 @@ export type Technology =
   | "Blockchain"
   | "PHP"
   | "Vercel"
-  | "OpenAI";
+  | "OpenAI"
+  | "wagmi";
