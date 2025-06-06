@@ -24,12 +24,14 @@ export default function Project(props: ProjectProps) {
 
   return (
     <div className="border bg-brand-background border-brand-secondary rounded-md overflow-hidden transition-all duration-200">
-      <div className="p-3 transition-colors duration-200">
+      <div
+        className="p-3 transition-colors duration-200 cursor-pointer bg-brand-tag hover:bg-brand-secondary"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <div className="flex justify-between items-center">
           <div className="font-bold text-base md:text-lg pr-4">{title}</div>
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer text-sm text-brand-primary border border-brand-secondary rounded-md px-2 py-1 hover:bg-brand-tag transition-all duration-200 flex-shrink-0"
+            className="text-sm text-brand-primary border border-brand-primary rounded-md px-2 py-1 hover:bg-brand-tag transition-all duration-200 flex-shrink-0 cursor-pointer"
             aria-label={
               isOpen ? "Collapse project details" : "Expand project details"
             }
