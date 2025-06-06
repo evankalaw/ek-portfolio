@@ -24,25 +24,22 @@ export default function Project(props: ProjectProps) {
 
   return (
     <div className="border bg-brand-background border-brand-secondary rounded-md overflow-hidden transition-all duration-200">
-      <div
-        className="p-3 transition-colors duration-200 cursor-pointer bg-brand-tag hover:bg-brand-secondary"
+      <button
+        className="py-3 px-4 transition-colors duration-200 cursor-pointer bg-brand-tag hover:bg-brand-secondary w-full"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={
+          isOpen ? "Collapse project details" : "Expand project details"
+        }
       >
         <div className="flex justify-between items-center">
           <div className="font-bold text-base md:text-lg pr-4">{title}</div>
-          <button
-            className="text-sm text-brand-primary border border-brand-primary rounded-md px-2 py-1 hover:bg-brand-tag transition-all duration-200 flex-shrink-0 cursor-pointer"
-            aria-label={
-              isOpen ? "Collapse project details" : "Expand project details"
-            }
-          >
-            <FontAwesomeIcon
-              icon={isOpen ? faChevronUp : faChevronDown}
-              className="w-3 h-3"
-            />
-          </button>
+
+          <FontAwesomeIcon
+            icon={isOpen ? faChevronUp : faChevronDown}
+            className="w-3 h-3"
+          />
         </div>
-      </div>
+      </button>
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-none opacity-100" : "max-h-0 opacity-0"
