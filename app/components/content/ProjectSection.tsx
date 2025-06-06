@@ -18,7 +18,9 @@ const projects: ProjectType[] = [
   },
   {
     title: "On-chain SVG Token Mint",
-    description: "Description",
+    description:
+      "I worked on the front end for a web app with a non-fungible token (NFT) contract where image generation happened fully on chain. This was relatively novel at the time where most NFT contracts stored their images off-chain. The images were built as SVGs using basic tags like path, circle, ellipse and group.\n\nThe UI was such that the user could pick a configuration of a variety of traits and palettes on the React app.\n\nThe seed configured on the frontend was passed to the contract and associated with the minted token.",
+    technologies: ["React", "Tailwind", "Blockchain", "wagmi"],
   },
   {
     title: "Constant Rate Auction Token Mint",
