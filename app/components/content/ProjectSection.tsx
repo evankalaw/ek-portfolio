@@ -25,7 +25,7 @@ const projects: ProjectType[] = [
   {
     title: "Constant Rate Auction Token Mint",
     description:
-      "This was the third project I worked on in the Blockchain space. The smart contract this website used was a modified version of the Constant Rate Issuance Sales Protocol (CRISP) developed by Paradigm.\n\nThe idea behind CRISP is to maintain a constant rate of selling tokens by adjusting a variable price based on demand.\n\nUsers were able to connect their wallets to the website and mint tokens at this variable price influenced by demand until the project sold out.\n\nSmart contract read and write operations were required, such that the current price and state of the sale along with purchasing were available to the front end.\n\nRead more about CRISPR below.",
+      "This was the third project I worked on in the Blockchain space. The smart contract this website used was a modified version of the Constant Rate Issuance Sales Protocol (CRISP) developed by Paradigm.\n\nThe idea behind CRISP is to maintain a constant rate of selling tokens by adjusting a variable price based on demand.\n\nUsers were able to connect their wallets to the website and mint tokens at this variable price influenced by demand until the project sold out.\n\nSmart contract read and write operations were required, such that the current price and state of the sale along with purchasing were available to the front end.\n\nRead more about CRISP below.",
     technologies: ["React", "Tailwind", "Blockchain", "wagmi"],
     link: "https://www.paradigm.xyz/2022/01/constant-rate-issuance-sales-protocol",
   },
