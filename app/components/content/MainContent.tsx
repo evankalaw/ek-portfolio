@@ -27,13 +27,7 @@ export default function MainContent() {
         </div>
         <div>
           Prior to that, I consulted with{" "}
-          <Link
-            href="https://elizastudios.ai"
-            target="_blank"
-            className="hover:text-brand-accent text-brand-primary font-bold underline"
-          >
-            Eliza Studios
-          </Link>{" "}
+          <span className="text-brand-primary font-bold">Eliza Studios</span>{" "}
           and was a Software Engineer at Yoz Labs, where I worked on a
           blockchain notifications product.
         </div>
