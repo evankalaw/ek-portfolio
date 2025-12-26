@@ -13,21 +13,29 @@ export default function MainContent() {
           great user experiences.
         </div>
         <div>
-          Most recently, I consulted with{" "}
+          Most recently, I was a Senior Software Engineer at{" "}
+          <Link
+            href="https://warmer.com"
+            target="_blank"
+            className="hover:text-brand-accent text-brand-primary font-bold underline"
+          >
+            Warmer
+          </Link>
+          , where I built an AI chatbot integration driving 5x conversion
+          increase, Groups and P2P systems, retention features, and core
+          platform infrastructure.
+        </div>
+        <div>
+          Prior to that, I consulted with{" "}
           <Link
             href="https://elizastudios.ai"
             target="_blank"
             className="hover:text-brand-accent text-brand-primary font-bold underline"
           >
             Eliza Studios
-          </Link>
-          , a creative studio, where I built a comprehensive front end
-          experience for their users with Next.JS, Tailwind CSS, TypeScript, and
-          Sanity CMS.
-        </div>
-        <div>
-          Prior to that, I was a Software Engineer at Yoz Labs, where I worked
-          on a blockchain notifications product.
+          </Link>{" "}
+          and was a Software Engineer at Yoz Labs, where I worked on a
+          blockchain notifications product.
         </div>
         <div>
           If I&apos;m not building software, I&apos;m probably playing video

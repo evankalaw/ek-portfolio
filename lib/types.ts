@@ -42,4 +42,8 @@ export type Technology =
   | "PHP"
   | "Vercel"
   | "OpenAI"
-  | "wagmi";
+  | "wagmi"
+  | "Sendbird"
+  | "Posthog"
+  | "Daily.co"
+  | "AI";

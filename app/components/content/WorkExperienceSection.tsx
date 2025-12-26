@@ -3,6 +3,14 @@ import WorkExperienceItem from "./WorkExperienceItem";
 
 const workExperience: WorkExperience[] = [
   {
+    jobTitle: "Senior Software Engineer",
+    lengthOfJob: "Jul 2025 - Dec 2025",
+    company: "Warmer",
+    technologies: ["Next.JS", "React", "TypeScript", "Tailwind", "Sendbird", "Posthog", "Daily.co", "AI"],
+    description:
+      "Implemented AI chatbot integration for customer booking flow, achieving 5x conversion increase. Redesigned architecture using Next.js Server Actions, reducing dependency on an outdated internal SDK in favor of a more future-facing and iterable approach. Architected the frontend and TanStack Query state management for in-house Groups and P2P connections systems, integrating Sendbird for real-time messaging and Daily.co for video chat. Led home page redesign with 20+ React components improving onboarding and retention.",
+  },
+  {
     jobTitle: "Software Engineering Consultant",
     lengthOfJob: "Mar 2025 - Apr 2025",
     company: "Eliza Studios",
