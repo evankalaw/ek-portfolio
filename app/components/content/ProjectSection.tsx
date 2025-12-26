@@ -7,7 +7,6 @@ const projects: ProjectType[] = [
     description:
       "Eliza Studios is a production company that creates content for the web. I was contracted to build a website that was reminiscent of flipping through pages in a magazine, that would allow them to publish various thought pieces and have a place to store their assets.\n\nI had open reign to choose the tech stack of the website, and I chose Next.JS, Tailwind, and after looking at various CMS options, I landed on using Sanity. I'd love to do a write up on this in the future - but I'll save that for another time.\n\nI used Lenis to create a smooth scrolling experience, and experimented with Three.js to add a 3D experience to some of the pages.",
     technologies: ["Next.JS", "Tailwind", "Sanity", "Vercel", "CSS"],
-    link: "https://elizastudios.ai",
   },
   {
     title: "Token Launchpad on Base",
