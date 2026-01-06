@@ -6,9 +6,18 @@ const workExperience: WorkExperience[] = [
     jobTitle: "Senior Software Engineer",
     lengthOfJob: "Jul 2025 - Dec 2025",
     company: "Warmer",
-    technologies: ["Next.JS", "React", "TypeScript", "Tailwind", "Sendbird", "Posthog", "Daily.co", "AI"],
+    technologies: [
+      "Next.JS",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Sendbird",
+      "Posthog",
+      "Daily.co",
+      "AI",
+    ],
     description:
-      "Implemented AI chatbot integration for customer booking flow, achieving 5x conversion increase. Redesigned architecture using Next.js Server Actions, reducing dependency on an outdated internal SDK in favor of a more future-facing and iterable approach. Architected the frontend and TanStack Query state management for in-house Groups and P2P connections systems, integrating Sendbird for real-time messaging and Daily.co for video chat. Led home page redesign with 20+ React components improving onboarding and retention.",
+      "At Warmer, I got to work on a variety of things, with the most impactful probably being implementing an AI chatbot for the primary customer booking flow, increasing conversion by 5x. I also started the transition to move the primary Next.js app off of an outdated SDK, reducing both development time and making deploying new features easier. Other contributions include: architecting the frontend and TanStack Query state management for in-house Groups and P2P connections systems, social retention features, and owning the Sendbird integration end-to-end—setting up providers, configuring the SDK, and extending Sendbird's UIKit components with custom functionality for messaging across the app.",
   },
   {
     jobTitle: "Software Engineering Consultant",
